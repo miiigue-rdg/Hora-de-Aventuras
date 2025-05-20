@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Base</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!-- Cabecera y Menú de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./images/Logo.png" alt="Logo" class="img-fluid" style="max-height: 50px;" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#footer">Footer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://myflixerz.to/tv/adventure-time-39381">Watch Online</a></li>
+                    <li class="nav-item"><a class="nav-link" href="preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">The Lich</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Quizz.html">Quizz</a></li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-dark ms-auto d-flex align-items-center gap-2">
+                    <img id="modeIcon" src="./images/DarkMode_Off.png" alt="Modo oscuro" />
+                    <span id="modeLabel">Modo Oscuro</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Introducción -->
+    <div class="container-fluid d-flex justify-content-center mt-4">
+        <div class="intro-section text-center text-white w-100">
+            <h1>Bienvenidos a la Tierra de Ooo</h1>
+            <h4 class="lead">
+                Explora el mágico mundo de Hora de Aventuras, lleno de personajes únicos, aventuras épicas y mucha diversión.
+                Viaja con Finn, Jake y sus amigos en historias que combinan fantasía, amistad y emoción en cada capítulo.
+            </h4>
+        </div>
+    </div>
+
+    <!-- Servicios -->
+    <div class="container mt-5">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="./images/Jake.jpg" class="card-img-top" alt="Jake el Perro" style="height: 200px; object-fit: cover;" />
+                    <div class="card-body">
+                        <h5 class="card-title">Jake el Perro</h5>
+                        <p class="card-text">El mejor amigo de Finn, con poderes elásticos y una personalidad relajada y divertida.</p>
+                    </div>
+                    <a href="servicioCafe.html" class="btn btn-info">Ver más</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="./images/princess-bubblegum.jpg" class="card-img-top" alt="Princesa Chicle" style="height: 200px; object-fit: cover;" />
+                    <div class="card-body">
+                        <h5 class="card-title">Princesa Chicle</h5>
+                        <p class="card-text">La inteligente y poderosa gobernante de la Tierra de Dulce, experta en ciencia y liderazgo.</p>
+                    </div>
+                    <a href="servicioComida.html" class="btn btn-info">Ver más</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="./images/Finn.jpg" class="card-img-top" alt="Finn el Humano" style="height: 200px; object-fit: cover;" />
+                    <div class="card-body">
+                        <h5 class="card-title">Finn el Humano</h5>
+                        <p class="card-text">El valiente héroe de la serie, siempre listo para la aventura y proteger a sus amigos.</p>
+                    </div>
+                    <a href="servicioCoctel.html" class="btn btn-info">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carrusel de Testimonios -->
+    <div id="carouselTestimonials" class="carousel slide container mt-5 carrusel-fondo-bmo" data-bs-ride="carousel">
+        <div class="carousel-inner text-black">
+            <div class="carousel-item active">
+                <div class="d-flex flex-column justify-content-center align-items-center h-100 text-center p-4">
+                    <blockquote class="blockquote">
+                        <p class="mb-4">"El ambiente es simplemente perfecto, y el personal es muy amable. ¡Un lugar que no puedes dejar de visitar!"</p>
+                        <small style="color: red;">Ted</small>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex flex-column justify-content-center align-items-center h-100 text-center p-4">
+                    <blockquote class="blockquote">
+                        <p class="mb-4">"La mejor coctelería de la ciudad, sin duda alguna. Volveré muchas veces."</p>
+                        <small style="color: red;">Ted</small>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex flex-column justify-content-center align-items-center h-100 text-center p-4">
+                    <blockquote class="blockquote">
+                        <p class="mb-4">"Comida deliciosa y excelente música. Me encanta venir con amigos a pasar la noche."</p>
+                        <small style="color: red;">Ted</small>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="text-white py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2025 Manuel Y Miguel</p>
+            <p>
+                <a href="#" class="text-white">Política de privacidad</a> |
+                <a href="#" class="text-white">Cookies</a> |
+                <a href="#" class="text-white">Aviso Legal</a>
+            </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/obscureMode.js"></script>
+</body>
+
+</html>
