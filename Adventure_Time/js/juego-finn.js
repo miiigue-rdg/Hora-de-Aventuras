@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const dialogo = document.getElementById("dialogo-finn");
 
     mochila.addEventListener("click", () => {
-        dialogo.textContent = "Finn: ¡Mi mochila tiene bocadillos mágicos y la Espada de Hierro de repuesto!";
+        dialogo.textContent = "My backpack has magical snacks and a spare Iron Sword!";
     });
 
     espada.addEventListener("click", () => {
-        dialogo.textContent = "Finn: ¡Esta espada ha vencido a muchos enemigos! ¡Algebraico!";
+        dialogo.textContent = "This sword has defeated many enemies! Algebraic!";
     });
 });

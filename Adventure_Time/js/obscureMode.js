@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", function () {
     function actualizarBotonModoOscuro(activado) {
         if (activado) {
             modeIcon.src = "./images/DarkMode_On.png"; // Imagen para modo claro
-            modeIcon.alt = "Modo claro";
-            modeLabel.textContent = "Modo Claro";
+            modeIcon.alt = "Light Mode";
+            modeLabel.textContent = "Light Mode";
         } else {
             modeIcon.src = "./images/DarkMode_Off.png"; // Imagen para modo oscuro
-            modeIcon.alt = "Modo oscuro";
-            modeLabel.textContent = "Modo Oscuro";
+            modeIcon.alt = "Dark Mode";
+            modeLabel.textContent = "Dark Mode";
         }
     }
 

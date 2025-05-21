@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -8,18 +7,11 @@
   <title>Finn the human - Adventure Time</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-  </style>
 </head>
 
 <body class="d-flex flex-column min-vh-100">
 
-  <!-- Cabecera y Menú de Navegación -->
+  <!-- Header -->
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
@@ -32,7 +24,7 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html">Main</a></li>
           <li class="nav-item"><a class="nav-link" href="https://myflixerz.to/tv/adventure-time-39381">Watch Online</a></li>
           <li class="nav-item"><a class="nav-link" href="FindHero.html">Know the Hero</a></li>
           <li class="nav-item"><a class="nav-link" href="Lich.html">The Lich</a></li>
@@ -40,43 +32,45 @@
         </ul>
         <button id="darkModeToggle" class="btn btn-dark ms-auto d-flex align-items-center gap-2">
           <img id="modeIcon" src="./images/DarkMode_Off.png" alt="Modo oscuro" />
-          <span id="modeLabel">Modo Oscuro</span>
+          <span id="modeLabel">Dark Mode</span>
         </button>
       </div>
     </div>
   </nav>
 
-  <!-- Contenido principal -->
+  <!-- Contenido -->
   <main class="flex-fill">
     <div class="container mt-5">
-      <h2 class="text-center mb-4">Finn the human</h2>
+      <h2 class="hero-title text-center">Finn the human</h2>
       <div class="row">
-        <div class="col-lg-6 mb-4">
-          <img src="images/finn frame.jpg" alt="Finn the human" class="img-fluid rounded shadow-sm">
+        <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-start">
+          <img src="images/finn-standing.jpg" alt="Finn the human" class="img-fluid rounded shadow-sm finn-image">
         </div>
         <div class="col-lg-6">
-          <h3>The hero boy</h3>
-          <p>
-           In a land ravaged by ancient wars and forgotten magic, a brave young human rises: Finn, the last of his kind… or so he believes. Armed with a sword, a noble heart, and unshakable determination, he battles evil and protects the innocent. At his side is Jake the Dog, his loyal brother, forming the most legendary duo in the Land of Ooo.
-            Finn is not just a warrior: he is a symbol of hope, growth, and humanity in a world full of chaos.
-          </p>
+          <div class="finn-info-box p-4 rounded">
+            <h3>The hero boy</h3>
+            <p>
+              In a land ravaged by ancient wars and forgotten magic, a brave young human rises: Finn, the last of his kind… or so he believes. Armed with a sword, a noble heart, and unshakable determination, he battles evil and protects the innocent. At his side is Jake the Dog, his loyal brother, forming the most legendary duo in the Land of Ooo.
+              <br><br>
+              Finn is not just a warrior: he is a symbol of hope, growth, and humanity in a world full of chaos. His adventures take him through enchanted forests, treacherous mountains, and the depths of the ocean, where he faces powerful foes and learns valuable lessons about friendship, love, and sacrifice. With each challenge, Finn discovers more about himself and his destiny, becoming a true hero in every sense of the word.
+            </p>
+          </div>
         </div>
-        <div></div>
       </div>
     </div>
   </main>
 
-    <!-- Footer -->
-<footer id="footer" class="text-white py-4 mt-5 position-relative">
+  <!-- Footer -->
+  <footer id="footer" class="text-white py-4 mt-5 position-relative">
     <div class="container text-center">
-        <a href="https://github.com/usuario1" target="_blank" class="github-left">
-            <img class="github-logo" src="./images/github-logo.png" alt="GitHub Usuario 1">
-        </a>
-        <a href="https://github.com/usuario2" target="_blank" class="github-right">
-            <img class="github-logo" src="./images/github-logo.png" alt="GitHub Usuario 2">
-        </a>
+      <a href="https://github.com/usuario1" target="_blank" class="github-left">
+        <img class="github-logo" src="./images/github-logo.png" alt="GitHub Usuario 1">
+      </a>
+      <a href="https://github.com/usuario2" target="_blank" class="github-right">
+        <img class="github-logo" src="./images/github-logo.png" alt="GitHub Usuario 2">
+      </a>
     </div>
-</footer>
+  </footer>
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

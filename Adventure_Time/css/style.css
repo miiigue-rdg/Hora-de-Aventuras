@@ -220,3 +220,117 @@ nav {
   background-position: center;
   height: 1110px; /* Puedes ajustar el alto que desees */
 }
+
+.jake-info-box {
+  background-color: rgba(187, 193, 6, 0.559); /* gris semitransparente */
+  color: #000000; /* puedes cambiar a blanco si lo prefieres */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .jake-info-box {
+  background-color: rgba(80, 80, 80, 0.5); /* gris oscuro semitransparente */
+  color: #ffffff;
+}
+
+.jake-image {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+@media (min-width: 768px) {
+  .jake-image {
+    width: 400px;
+  }
+}
+
+.hero-title {
+  margin-bottom: 50px; /* Ajusta el valor como necesites */
+}
+
+.finn-image {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}
+
+@media (min-width: 768px) {
+  .finn-image {
+    width: 400px;
+  }
+}
+
+.finn-info-box {
+  background-color: rgba(71, 202, 220, 0.559); /* gris semitransparente */
+  color: #000000; /* puedes cambiar a blanco si lo prefieres */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .finn-info-box {
+  background-color: rgba(80, 80, 80, 0.5); /* gris oscuro semitransparente */
+  color: #ffffff;
+}
+
+img.princess-image {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: 30%;
+}
+
+@media (min-width: 768px) {
+  img.princess-image {
+    width: 200px;
+  }
+}
+
+.princess-info-box {
+  background-color: rgba(236, 121, 251, 0.559); /* gris semitransparente */
+  color: #000000; /* puedes cambiar a blanco si lo prefieres */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .princess-info-box {
+  background-color: rgba(80, 80, 80, 0.5); /* gris oscuro semitransparente */
+  color: #ffffff;
+}
+
+.lich-info-box {
+  background-color: rgba(50, 50, 50, 0.6); /* oscuro semitransparente */
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border-left: 5px solid #228B22; /* verde necromántico opcional */
+}
+
+.dark-mode .lich-info-box {
+  background-color: rgba(20, 20, 20, 0.7);
+  color: #e0e0e0;
+  border-left-color: #90ee90;
+}
+
+.lich-image {
+  max-width: 100%;
+  height: auto;
+  margin-left: 30%;
+  display: block;
+  border: 3px solid limegreen;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .lich-image {
+    height: 400px;
+  }
+}
+
+    .quiz-container {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .quiz-title {
+      color: #5c4b99;
+    }

@@ -27,23 +27,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (sinResponder) {
-      resultado.innerHTML = `<div class="alert alert-warning">Por favor, responde todas las preguntas.</div>`;
-      return;
+        resultado.innerHTML = `<div class="alert alert-warning">Please, answer all questions.</div>`;
+    return;
     }
+
 
     // Mostrar resultado
     let mensaje = "";
     if (puntaje === 3) {
-      mensaje = "¡Eres un verdadero fan de Hora de Aventuras! 🏆";
+      mensaje = "You’re a true Adventure Time fan! 🏆";
     } else if (puntaje === 2) {
-      mensaje = "¡Casi perfecto! 😎";
+      mensaje = "Almost perfect! 😎";
     } else {
-      mensaje = "Sigue viendo la serie, ¡te queda camino por recorrer! 🍭";
+      mensaje = "Keep watching the series, you’ve got a lot more to explore! 🍭";
     }
 
     resultado.innerHTML = `
       <div class="alert alert-info">
-        Has obtenido <strong>${puntaje}/3</strong>. ${mensaje}
+        ${mensaje}
       </div>
     `;
   });
