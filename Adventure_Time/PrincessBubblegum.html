@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Princess Bubblegum - Adventure Time</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Cabecera y Menú de Navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="./images/Logo.png" alt="Logo" class="img-fluid" style="max-height: 50px;" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://myflixerz.to/tv/adventure-time-39381">Watch Online</a></li>
+          <li class="nav-item"><a class="nav-link" href="FindHero.html">Know the Hero</a></li>
+          <li class="nav-item"><a class="nav-link" href="Lich.html">The Lich</a></li>
+          <li class="nav-item"><a class="nav-link" href="Quizz.html">Quizz</a></li>
+        </ul>
+        <button id="darkModeToggle" class="btn btn-dark ms-auto d-flex align-items-center gap-2">
+          <img id="modeIcon" src="./images/DarkMode_Off.png" alt="Modo oscuro" />
+          <span id="modeLabel">Modo Oscuro</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="flex-fill">
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Princess Bubblegum</h2>
+      <div class="row">
+        <div class="col-lg-6 mb-4">
+          <img src="./images/Princess Bubblegum Scientitst.webp" alt="Princess Bubblegum" class="img-fluid rounded shadow-sm" />
+        </div>
+        <div class="col-lg-6">
+          <h3>The pink queen</h3>
+          <p>
+            In the brightest corner of the Candy Kingdom, where sweets walk and dreams taste like cotton candy, rules a
+            mind as sharp as it is sweet: Princess Bubblegum. Also known as Bonnibel Bubblegum, she is far more than a
+            royal figure. She’s a scientist, an inventor, a strategist… and an unstoppable force when her people or
+            justice are at stake.
+
+            Her sugary smile hides a razor-sharp intellect. She has created life from sugar, built impossible machines,
+            and faced world-ending threats with cool logic and a pink grin. She may look charming, but inside burns the
+            fire of a ruler who would do anything to protect what she loves.
+
+            From leading candy armies to bending the laws of time and matter, Princess Bubblegum is the perfect fusion
+            of adorable and formidable. Because in the Land of Ooo, true royalty doesn’t just wear a crown… she wears a
+            lab coat too.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+<footer id="footer" class="text-white py-4 mt-5 position-relative">
+    <div class="container text-center">
+        <a href="https://github.com/usuario1" target="_blank" class="github-left">
+            <img class="github-logo" src="./images/github-logo.png" alt="GitHub Usuario 1">
+        </a>
+        <a href="https://github.com/usuario2" target="_blank" class="github-right">
+            <img class="github-logo" src="./images/github-logo.png" alt="GitHub Usuario 2">
+        </a>
+    </div>
+</footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/obscureMode.js"></script>
+</body>
+
+</html>

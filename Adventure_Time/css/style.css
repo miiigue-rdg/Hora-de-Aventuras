@@ -12,13 +12,52 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: url('../images/cursor.cur'), auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.carrusel-fondo-bmo {
-  background-image: url('../images/BMO.png');
+main.flex-fill {
+  flex: 1;
+}
+
+footer {
+  background-image: url('../images/Intro.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  color: white;
+  margin-top: auto;
+  min-height: 100px;
+  position: relative;
+}
+
+/* Carrusel reducido y centrado */
+#carouselTestimonials {
+  height: 300px;
+  overflow: hidden;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item blockquote {
+  color: black;
+  font-size: 1.2rem;
+  max-width: 700px;
+}
+
+.carousel-item small {
+  color: red !important;
 }
 
 nav {
@@ -64,14 +103,6 @@ nav {
   border-radius: 12px;
 }
 
-footer {
-  background-image: url('../images/Intro.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-}
-
 .dark-mode footer {
   background-image: url('../images/IntroDark.png');
   background-color: #111 !important;
@@ -81,31 +112,6 @@ footer {
   width: 24px;
   height: 24px;
   object-fit: contain;
-}
-
-/* Carrusel con altura fija y centrado vertical */
-#carouselTestimonials {
-  height: 300px;
-  overflow: hidden;
-}
-
-.carousel-inner {
-  height: 100%;
-}
-
-.carousel-item {
-  height: 100%;
-  transition: transform 0.6s ease-in-out;
-}
-
-.carousel-item blockquote {
-  color: black;
-  font-size: 1.2rem;
-  max-width: 700px;
-}
-
-.carousel-item small {
-  color: red !important;
 }
 
 /* Mantener tamaño constante del botón modo oscuro */
@@ -133,7 +139,6 @@ footer {
 }
 
 /* Quizz */
-
 .dark-mode .quiz-container {
   background-color: #000 !important;
   color: #fff !important;
@@ -148,28 +153,70 @@ footer {
   color: #f1f1f1 !important;
 }
 
+/* Juego Interactivo */
 #juego-finn {
-    position: relative;
-    background-color: #222;
+  position: relative;
+  background-color: #222;
 }
 
 .click-area {
-    position: absolute;
-    cursor: pointer;
-    background-color: rgba(255, 255, 0, 0); /* Invisible pero clicable */
+  position: absolute;
+  cursor: pointer;
+  background-color: rgba(255, 255, 0, 0); /* Invisible pero clicable */
 }
 
 /* Coordenadas aproximadas según imagen centrada */
 #mochila {
-    top: 20%;
-    left: 42%;
-    width: 90px;
-    height: 90px;
+  top: 20%;
+  left: 42%;
+  width: 90px;
+  height: 90px;
 }
 
 #espada {
-  top: 20px;   /* mucho más arriba */
-  left: 200px;  /* más a la izquierda */
+  top: 20px;
+  left: 200px;
   width: 80px;
   height: 240px;
+}
+
+.dark-mode nav {
+  background-color: #062a4f !important; /* azul oscuro tipo navy */
+}
+
+.dark-mode .navbar-light .navbar-nav .nav-link {
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .navbar-light .navbar-brand img {
+  filter: brightness(0.9);
+}
+
+/* GitHub Icons (footer) */
+.github-logo {
+  width: 80px;
+  height: 80px;
+}
+
+/* Posición lateral de los iconos */
+.github-left {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.github-right {
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carrusel-fondo-bmo {
+  background-image: url('../images/BMO.png');
+  background-size: 110% 125%; /* ESTRECHA horizontalmente */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1110px; /* Puedes ajustar el alto que desees */
 }

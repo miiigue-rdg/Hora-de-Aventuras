@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Lich - Adventure Time</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./images/Logo.png" alt="Logo" class="img-fluid" style="max-height: 50px;" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://myflixerz.to/tv/adventure-time-39381">Watch Online</a></li>
+          <li class="nav-item"><a class="nav-link" href="FindHero.html">Know the Hero</a></li>
+          <li class="nav-item"><a class="nav-link" href="Lich.html">The Lich</a></li>
+          <li class="nav-item"><a class="nav-link" href="Quizz.html">Quizz</a></li>
+        </ul>
+        <button id="darkModeToggle" class="btn btn-dark ms-auto d-flex align-items-center gap-2">
+          <img id="modeIcon" src="./images/DarkMode_Off.png" alt="Modo oscuro" />
+          <span id="modeLabel">Modo Oscuro</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <div class="container mt-5 flex-grow-1 lich-container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="./images/the-lich.jpg" alt="The Lich" />
+      </div>
+      <div class="col-md-6 text-content">
+        <h2>The Lich</h2>
+        <p>
+          The Lich is the embodiment of pure evil and destruction in the world of Adventure Time.<br/>
+          As a powerful undead sorcerer, he relentlessly seeks to bring chaos and annihilation to the Land of Ooo.<br/>
+          His eerie presence and dark magic make him one of Finn and Jake's most formidable foes.<br/>
+          Despite his terrifying nature, his story is intertwined with the deeper lore and mysteries of the series.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+<footer id="footer" class="text-white py-4 mt-5 position-relative">
+    <div class="container text-center">
+        <a href="https://github.com/usuario1" target="_blank" class="github-left">
+            <img class="github-logo" src="./images/github-logo.png" alt="GitHub Usuario 1">
+        </a>
+        <a href="https://github.com/usuario2" target="_blank" class="github-right">
+            <img class="github-logo" src="./images/github-logo.png" alt="GitHub Usuario 2">
+        </a>
+    </div>
+</footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/obscureMode.js"></script>
+
+</body>
+
+</html>
