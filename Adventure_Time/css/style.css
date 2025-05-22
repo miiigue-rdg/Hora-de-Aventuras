@@ -23,14 +23,15 @@ main.flex-fill {
 }
 
 footer {
-  background-image: url('../images/Intro.png');
-  background-size: cover;
-  background-position: center;
+  background-image: url('../images/Intro.jpg');
+  background-size: contain; /* Asegura que la imagen se ajuste sin recortarse */
+  background-position: top center; /* La imagen comienza desde el borde superior */
   background-repeat: no-repeat;
   color: white;
   margin-top: auto;
-  min-height: 100px;
+  min-height: 100px; /* Mantén la altura original del footer */
   position: relative;
+  background-color: #0539e5 !important;
 }
 
 /* Carrusel reducido y centrado */
@@ -104,8 +105,8 @@ nav {
 }
 
 .dark-mode footer {
-  background-image: url('../images/IntroDark.png');
-  background-color: #111 !important;
+  background-image: url('../images/IntroDark.jpg');
+  background-color: #000000 !important;
 }
 
 #darkModeToggle img {
@@ -165,19 +166,20 @@ nav {
   background-color: rgba(255, 255, 0, 0); /* Invisible pero clicable */
 }
 
-/* Coordenadas aproximadas según imagen centrada */
+/* Coordenadas ajustadas para ser responsivas */
 #mochila {
   top: 20%;
-  left: 42%;
-  width: 90px;
-  height: 90px;
+  left: 40%;
+  width: 10%;
+  height: 15%;
+  border-radius: 50%;
 }
 
 #espada {
-  top: 20px;
-  left: 200px;
-  width: 80px;
-  height: 240px;
+  top: 5%;
+  left: 26%; /* Mover la espada más a la izquierda */
+  width: 12%;
+  height: 60%;
 }
 
 .dark-mode nav {
@@ -324,13 +326,69 @@ img.princess-image {
   }
 }
 
-    .quiz-container {
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 2rem;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+@media (max-width: 768px) {
+  #lich-section {
+    flex-direction: column;
+    text-align: center; /* Centra el texto y la imagen en pantallas pequeñas */
+  }
 
-    .quiz-title {
-      color: #5c4b99;
-    }
+  .lich-info-box {
+    margin-bottom: 20px;
+  }
+
+  .lich-image {
+    max-width: 80%; /* Limitar el tamaño de la imagen en pantallas pequeñas */
+    margin-left: 40px; /* Mover la imagen un poco a la izquierda en pantallas pequeñas */
+  }
+}
+
+.quiz-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-title {
+  color: #5c4b99;
+}
+
+/* Ajuste de la posición de la espada en pantallas pequeñas */
+@media (max-width: 768px) {
+  #espada {
+    left: 10%;  /* Mueve la espada más a la izquierda en pantallas pequeñas */
+    width: 15%; /* Ajusta el tamaño para pantallas pequeñas */
+    height: 55%; /* Ajusta el tamaño para pantallas pequeñas */
+  }
+}
+
+/* -- Estilos de la tarjeta de personajes -- */
+.card {
+  position: relative; /* Necesario para que el video se posicione sobre la imagen */
+}
+
+.video-container {
+  position: relative;
+}
+
+.card-img-top {
+  transition: opacity 0.3s ease;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.video-container:hover video {
+  opacity: 1; /* Muestra el video cuando se hace hover */
+}
+
+.video-container:hover img {
+  opacity: 0; /* Oculta la imagen cuando se hace hover */
+}

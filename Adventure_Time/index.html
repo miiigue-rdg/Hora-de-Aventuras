@@ -7,10 +7,11 @@
     <title>Main Page - Adventure Time</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/Icon.png">
 </head>
 
 <body>
-    <!-- Cabecera y Menú de Navegación -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
@@ -24,7 +25,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item"><a class="nav-link active" href="#footer">Footer</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://myflixerz.to/tv/adventure-time-39381">Watch Online</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://myflixerz.to/tv/adventure-time-39381">Watch
+                            Online</a></li>
                     <li class="nav-item"><a class="nav-link" href="FindHero.html">Know the Hero</a></li>
                     <li class="nav-item"><a class="nav-link" href="Lich.html">The Lich</a></li>
                     <li class="nav-item"><a class="nav-link" href="Quizz.html">Quizz</a></li>
@@ -37,48 +39,64 @@
         </div>
     </nav>
 
-    <!-- Contenido principal -->
+    <!-- Main Content -->
     <main class="flex-fill">
-        <!-- Introducción -->
         <div class="container-fluid d-flex justify-content-center mt-4">
             <div class="intro-section text-center text-white w-100">
-                <h1>Wellcome to the land of Ooo</h1>
+                <h1>Welcome to the land of Ooo</h1>
                 <h4 class="lead">
-                    Explore the magical world of Adventure Time, full of unique characters, epic adventures, and lots of fun.
-                    Join Finn, Jake, and their friends on stories that blend fantasy, friendship, and excitement in every episode.
+                    Explore the magical world of Adventure Time, full of unique characters, epic adventures, and lots of
+                    fun.
+                    Join Finn, Jake, and their friends on stories that blend fantasy, friendship, and excitement in
+                    every episode.
                 </h4>
             </div>
         </div>
 
-        <!-- Servicios -->
+        <!-- Characters -->
         <div class="container mt-5">
             <div class="row text-center">
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
-                        <img src="./images/Jake.jpg" class="card-img-top" alt="Jake el Perro" style="height: 200px; object-fit: cover;" />
+                        <div class="video-container">
+                            <video class="card-img-top" src="./videos/jake-video.mp4" alt="Jake the dog" style="height: 200px; object-fit: cover;" autoplay muted loop></video>
+                            <img src="./images/Jake.jpg" class="card-img-top" alt="Jake el Perro"
+                                style="height: 200px; object-fit: cover;" />
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Jake the dog</h5>
-                            <p class="card-text">Finn's best friend, with stretchy powers and a laid-back, fun personality.</p>
+                            <p class="card-text">Finn's best friend, with stretchy powers and a laid-back, fun
+                                personality.</p>
                         </div>
                         <a href="JakeTheDog.html" class="btn btn-info">See more</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
-                        <img src="./images/princess-bubblegum.jpg" class="card-img-top" alt="Princesa Chicle" style="height: 200px; object-fit: cover;" />
+                        <div class="video-container">
+                            <video class="card-img-top" src="./videos/princess-bubblegum-video.mp4" alt="Princess Bubblegum" style="height: 200px; object-fit: cover;" autoplay muted loop></video>
+                            <img src="./images/princess-bubblegum.jpg" class="card-img-top" alt="Princesa Chicle"
+                                style="height: 200px; object-fit: cover;" />
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Princess Bubblegum</h5>
-                            <p class="card-text">The intelligent and powerful ruler of the Candy Kingdom, an expert in science and leadership.</p>
+                            <p class="card-text">The intelligent and powerful ruler of the Candy Kingdom, an expert in
+                                science and leadership.</p>
                         </div>
                         <a href="PrincessBubblegum.html" class="btn btn-info">See more</a>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
-                        <img src="./images/Finn.jpg" class="card-img-top" alt="Finn el Humano" style="height: 200px; object-fit: cover;" />
+                        <div class="video-container">
+                            <video class="card-img-top" src="./videos/finn-video.mp4" alt="Finn the human" style="height: 200px; object-fit: cover;" autoplay muted loop></video>
+                            <img src="./images/Finn.jpg" class="card-img-top" alt="Finn el Humano"
+                                style="height: 200px; object-fit: cover;" />
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Finn the human</h5>
-                            <p class="card-text">The brave hero of the series, always ready for adventure and to protect his friends.</p>
+                            <p class="card-text">The brave hero of the series, always ready for adventure and to protect
+                                his friends.</p>
                         </div>
                         <a href="FinnTheHuman.html" class="btn btn-info">See more</a>
                     </div>
@@ -86,14 +104,15 @@
             </div>
         </div>
 
-        <!-- Carrusel de Testimonios -->
-        <div id="carouselTestimonials" class="carousel slide container mt-5 mb-5 carrusel-fondo-bmo" data-bs-ride="carousel" style="max-width: 600px;">
+        <!-- Carrusel -->
+        <div id="carouselTestimonials" class="carousel slide container mt-5 mb-5 carrusel-fondo-bmo"
+            data-bs-ride="carousel" style="max-width: 600px;">
             <div class="carousel-inner text-black">
                 <div class="carousel-item active">
                     <div class="d-flex flex-column justify-content-center align-items-center h-100 text-center p-4">
                         <blockquote class="blockquote">
                             <p class="mb-4">“Killing pixies is some hardcore evil.”</p>
-                        <small style="color: red;">Marceline</small>
+                            <small style="color: red;">Marceline</small>
                         </blockquote>
                     </div>
                 </div>
@@ -101,42 +120,44 @@
                     <div class="d-flex flex-column justify-content-center align-items-center h-100 text-center p-4">
                         <blockquote class="blockquote">
                             <p class="mb-4">“I never knew being fat and lazy was so rewarding!”</p>
-                        <small style="color: red;">Finn</small>
+                            <small style="color: red;">Finn</small>
                         </blockquote>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="d-flex flex-column justify-content-center align-items-center h-100 text-center p-4">
                         <blockquote class="blockquote">
-                            <p class="mb-4">“Dude, you can't stay here if you're gonna stank it up with your bad vibes, man!”</p>
-                        <small style="color: red;">Jake</small>
+                            <p class="mb-4">“Dude, you can't stay here if you're gonna stank it up with your bad vibes,
+                                man!”</p>
+                            <small style="color: red;">Jake</small>
                         </blockquote>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
+                <span class="visually-hidden">Anterior</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
+                <span class="visually-hidden">Siguiente</span>
             </button>
         </div>
     </main>
 
     <!-- Footer -->
-<footer id="footer" class="text-white py-4 mt-5 position-relative">
-    <div class="container text-center">
-        <a href="https://github.com/usuario1" target="_blank" class="github-left">
-            <img class="github-logo" src="./images/github-logo.png" alt="GitHub Usuario 1">
-        </a>
-        <a href="https://github.com/usuario2" target="_blank" class="github-right">
-            <img class="github-logo" src="./images/github-logo.png" alt="GitHub Usuario 2">
-        </a>
-    </div>
-</footer>
-
+    <footer id="footer" class="text-white py-4 mt-5 position-relative">
+        <div class="container text-center">
+            <a href="https://github.com/ManuelAnd25" target="_blank" class="github-left">
+                <img class="github-logo" src="./images/github-logo.png" alt="GitHub Usuario 1">
+            </a>
+            <a href="https://github.com/miiigue-rdg" target="_blank" class="github-right">
+                <img class="github-logo" src="./images/github-logo.png" alt="GitHub Usuario 2">
+            </a>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

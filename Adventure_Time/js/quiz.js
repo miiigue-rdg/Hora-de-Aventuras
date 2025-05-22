@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const resultado = document.getElementById("quizResultado");
 
   form.addEventListener("submit", function (e) {
-    e.preventDefault(); // Evita recargar la página
+    e.preventDefault();
 
-    // Respuestas correctas
+    // Answers
     const respuestas = {
       q1: "a", // Finn Mertens
-      q2: "b", // Bajo eléctrico
+      q2: "b", // Electric Bass
       q3: "a", // Simon Petrikov
     };
 
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    // Mostrar resultado
+    // Show Results
     let mensaje = "";
     if (puntaje === 3) {
       mensaje = "You’re a true Adventure Time fan! 🏆";
