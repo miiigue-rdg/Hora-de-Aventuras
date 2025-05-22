@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marceline - Adventure Time</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./images/Icon.png" />
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/Logo.png" alt="Logo" class="img-fluid" style="max-height: 50px;" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Main</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://myflixerz.to/tv/adventure-time-39381">Watch
+                            Online</a></li>
+                    <li class="nav-item"><a class="nav-link" href="FindHero.html">Know the Hero</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Lich.html">The Lich</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Quizz.html">Quizz</a></li>
+                </ul>
+                <button id="darkModeToggle" class="btn btn-dark ms-auto d-flex align-items-center gap-2">
+                    <img id="modeIcon" src="./images/DarkMode_Off.png" alt="Modo oscuro" />
+                    <span id="modeLabel">Dark Mode</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-fill">
+        <div class="container mt-5">
+            <h2 class="hero-title text-center">Marceline</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-start">
+                    <img src="./images/marceline.png" alt="Marceline" class="img-fluid rounded shadow-sm marceline-image">
+                </div>
+                <div class="col-lg-6">
+                    <div class="marceline-info-box p-4 rounded">
+                        <h3>The Vampire Queen</h3>
+                        <p>
+                            In the depths of the post-apocalyptic history of Ooo lives an enigmatic figure with a
+                            rebellious soul and an electric bass as her weapon: Marceline, the Vampire Queen. Beyond her
+                            gothic appearance and dark past, Marceline is a sensitive artist, a powerful warrior, and an
+                            immortal being with a thousand years of emotions just beneath the surface.
+
+                            Able to absorb the color red and soar through the skies, Marceline wields her vampiric
+                            powers with style, humor, and a defiant attitude. But what truly defines her is her heart:
+                            one filled with music, pain, love, and memories. Her connection to characters like Simon
+                            (the Ice King) and Princess Bubblegum reveals her many layers and emotional depth.
+
+                            A lover of freedom, an enemy of convention, and the owner of a voice that sings the truths
+                            of the soul, Marceline has conquered both the stage and the hearts of those around her.
+
+                            Because not all monsters are evil… some just want to play a song under the full moon.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="text-white py-4 mt-5 position-relative">
+        <div class="container text-center">
+            <a href="https://github.com/ManuelAnd25" target="_blank" class="github-left">
+                <img class="github-logo" src="./images/github-logo.png" alt="GitHub Usuario 1">
+            </a>
+            <a href="https://github.com/miiigue-rdg" target="_blank" class="github-right">
+                <img class="github-logo" src="./images/github-logo.png" alt="GitHub Usuario 2">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/obscureMode.js"></script>
+</body>
+
+</html>
