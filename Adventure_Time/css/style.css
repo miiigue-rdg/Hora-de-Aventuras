@@ -22,19 +22,40 @@ main.flex-fill {
   flex: 1;
 }
 
+/* FOOTER */
 footer {
   background-image: url('../images/Intro.jpg');
-  background-size: contain; /* Asegura que la imagen se ajuste sin recortarse */
-  background-position: top center; /* La imagen comienza desde el borde superior */
+  background-size: contain; 
+  background-position: top center; 
   background-repeat: no-repeat;
   color: white;
   margin-top: auto;
-  min-height: 100px; /* Mantén la altura original del footer */
+  min-height: 100px; 
   position: relative;
   background-color: #0539e5 !important;
 }
 
-/* Carrusel reducido y centrado */
+.github-logo {
+  width: 80px;
+  height: 80px;
+}
+
+.github-left {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.github-right {
+  position: absolute;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* CARRUSEL */
+
 #carouselTestimonials {
   height: 300px;
   overflow: hidden;
@@ -60,6 +81,13 @@ footer {
 .carousel-item small {
   color: red !important;
 }
+.carrusel-fondo-bmo {
+  background-image: url('../images/BMO.png');
+  background-size: 110% 125%; 
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1110px; 
+}
 
 nav {
   background-color: #fff8dc;
@@ -76,6 +104,7 @@ nav {
   text-align: center;
 }
 
+/* DARK MODE */
 .dark-mode {
   background-color: #121212 !important;
   background-image: url('../images/Background_Dark.png');
@@ -86,7 +115,6 @@ nav {
   background-color: rgba(128, 128, 128, 0.3);
 }
 
-/* ✨ Dark Mode para las tarjetas (Servicios del Bar) */
 .dark-mode .card {
   background-color: #000 !important;
   color: #fff !important;
@@ -96,12 +124,6 @@ nav {
 .dark-mode .card .card-title,
 .dark-mode .card .card-text {
   color: #fff !important;
-}
-
-.intro-section {
-  background-color: rgba(0, 123, 255, 0.3);
-  padding: 3rem;
-  border-radius: 12px;
 }
 
 .dark-mode footer {
@@ -115,7 +137,6 @@ nav {
   object-fit: contain;
 }
 
-/* Mantener tamaño constante del botón modo oscuro */
 #darkModeToggle {
   width: 150px;
   height: 40px;
@@ -139,7 +160,6 @@ nav {
   font-weight: 600;
 }
 
-/* Quizz */
 .dark-mode .quiz-container {
   background-color: #000 !important;
   color: #fff !important;
@@ -154,36 +174,8 @@ nav {
   color: #f1f1f1 !important;
 }
 
-/* Juego Interactivo */
-#juego-finn {
-  position: relative;
-  background-color: #222;
-}
-
-.click-area {
-  position: absolute;
-  cursor: pointer;
-  background-color: rgba(255, 255, 0, 0); /* Invisible pero clicable */
-}
-
-/* Coordenadas ajustadas para ser responsivas */
-#mochila {
-  top: 20%;
-  left: 40%;
-  width: 10%;
-  height: 15%;
-  border-radius: 50%;
-}
-
-#espada {
-  top: 5%;
-  left: 26%; /* Mover la espada más a la izquierda */
-  width: 12%;
-  height: 60%;
-}
-
 .dark-mode nav {
-  background-color: #062a4f !important; /* azul oscuro tipo navy */
+  background-color: #062a4f !important;
 }
 
 .dark-mode .navbar-light .navbar-nav .nav-link {
@@ -194,44 +186,77 @@ nav {
   filter: brightness(0.9);
 }
 
-/* GitHub Icons (footer) */
-.github-logo {
-  width: 80px;
-  height: 80px;
+.dark-mode .jake-info-box {
+  background-color: rgba(80, 80, 80, 0.5); 
+  color: #ffffff;
 }
 
-/* Posición lateral de los iconos */
-.github-left {
+.dark-mode .finn-info-box {
+  background-color: rgba(80, 80, 80, 0.5); 
+  color: #ffffff;
+}
+
+.dark-mode .princess-info-box {
+  background-color: rgba(80, 80, 80, 0.5); 
+  color: #ffffff;
+}
+
+.dark-mode .marceline-info-box {
+  background-color: rgba(80, 80, 80, 0.5); 
+  color: #ffffff;
+}
+
+.dark-mode .bmo-info-box {
+  background-color: rgba(80, 80, 80, 0.5); 
+  color: #ffffff;
+}
+
+.dark-mode .lich-info-box {
+  background-color: rgba(20, 20, 20, 0.7);
+  color: #e0e0e0;
+  border-left-color: #90ee90;
+}
+
+.intro-section {
+  background-color: rgba(0, 123, 255, 0.3);
+  padding: 3rem;
+  border-radius: 12px;
+}
+
+/* Juego Interactivo */
+
+#juego-finn {
+  position: relative;
+  background-color: #222;
+}
+
+.click-area {
   position: absolute;
-  left: 20%;
-  top: 50%;
-  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: rgba(255, 255, 0, 0); 
 }
 
-.github-right {
-  position: absolute;
-  right: 20%;
-  top: 50%;
-  transform: translateY(-50%);
+#mochila {
+  top: 20%;
+  left: 40%;
+  width: 10%;
+  height: 15%;
+  border-radius: 50%;
 }
 
-.carrusel-fondo-bmo {
-  background-image: url('../images/BMO.png');
-  background-size: 110% 125%; /* ESTRECHA horizontalmente */
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 1110px; /* Puedes ajustar el alto que desees */
+#espada {
+  top: 5%;
+  left: 26%; 
+  width: 12%;
+  height: 60%;
 }
+
+/* JAKE */
 
 .jake-info-box {
-  background-color: rgba(187, 193, 6, 0.559); /* gris semitransparente */
-  color: #000000; /* puedes cambiar a blanco si lo prefieres */
+  background-color: rgba(187, 193, 6, 0.559);
+  color: #000000; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.dark-mode .jake-info-box {
-  background-color: rgba(80, 80, 80, 0.5); /* gris oscuro semitransparente */
-  color: #ffffff;
 }
 
 .jake-image {
@@ -246,8 +271,9 @@ nav {
   }
 }
 
+/* FINN */
 .hero-title {
-  margin-bottom: 50px; /* Ajusta el valor como necesites */
+  margin-bottom: 50px; 
 }
 
 .finn-image {
@@ -263,15 +289,12 @@ nav {
 }
 
 .finn-info-box {
-  background-color: rgba(71, 202, 220, 0.559); /* gris semitransparente */
-  color: #000000; /* puedes cambiar a blanco si lo prefieres */
+  background-color: rgba(71, 202, 220, 0.559);  
+  color: #000000;                               
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.dark-mode .finn-info-box {
-  background-color: rgba(80, 80, 80, 0.5); /* gris oscuro semitransparente */
-  color: #ffffff;
-}
+/* PRINCESA CHICLE */
 
 img.princess-image {
   width: 200px;
@@ -288,27 +311,18 @@ img.princess-image {
 }
 
 .princess-info-box {
-  background-color: rgba(236, 121, 251, 0.559); /* gris semitransparente */
-  color: #000000; /* puedes cambiar a blanco si lo prefieres */
+  background-color: rgba(236, 121, 251, 0.559); 
+  color: #000000; 
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.dark-mode .princess-info-box {
-  background-color: rgba(80, 80, 80, 0.5); /* gris oscuro semitransparente */
-  color: #ffffff;
-}
+/* EL LICH */
 
 .lich-info-box {
-  background-color: rgba(50, 50, 50, 0.6); /* oscuro semitransparente */
+  background-color: rgba(50, 50, 50, 0.6); 
   color: #ffffff;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  border-left: 5px solid #228B22; /* verde necromántico opcional */
-}
-
-.dark-mode .lich-info-box {
-  background-color: rgba(20, 20, 20, 0.7);
-  color: #e0e0e0;
-  border-left-color: #90ee90;
+  border-left: 5px solid #228B22; 
 }
 
 .lich-image {
@@ -329,50 +343,41 @@ img.princess-image {
 @media (max-width: 768px) {
   #lich-section {
     flex-direction: column;
-    text-align: center; /* Centra el texto y la imagen en pantallas pequeñas */
+    text-align: center; 
   }
-
+  
   .lich-info-box {
     margin-bottom: 20px;
   }
-
+  
   .lich-image {
-    max-width: 80%; /* Limitar el tamaño de la imagen en pantallas pequeñas */
-    margin-left: 40px; /* Mover la imagen un poco a la izquierda en pantallas pequeñas */
+    max-width: 80%;
+    margin-left: 40px; 
   }
 }
 
-.quiz-container {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 2rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.quiz-title {
-  color: #5c4b99;
-}
-
-/* Ajuste de la posición de la espada en pantallas pequeñas */
 @media (max-width: 768px) {
   #espada {
-    left: 10%;  /* Mueve la espada más a la izquierda en pantallas pequeñas */
-    width: 15%; /* Ajusta el tamaño para pantallas pequeñas */
-    height: 55%; /* Ajusta el tamaño para pantallas pequeñas */
+    left: 10%; 
+    width: 15%; 
+    height: 55%; 
   }
 }
 
-/* -- Estilos de la tarjeta de personajes -- */
-.card {
-  position: relative; /* Necesario para que el video se posicione sobre la imagen */
-}
+/* CARDS */
 
-.video-container {
-  position: relative;
+.card {
+  position: relative; 
 }
 
 .card-img-top {
   transition: opacity 0.3s ease;
+}
+
+/* VIDEO */
+
+.video-container {
+  position: relative;
 }
 
 .video-container video {
@@ -386,9 +391,67 @@ img.princess-image {
 }
 
 .video-container:hover video {
-  opacity: 1; /* Muestra el video cuando se hace hover */
+  opacity: 1; 
 }
 
 .video-container:hover img {
-  opacity: 0; /* Oculta la imagen cuando se hace hover */
+  opacity: 0; 
+}
+
+/* Quizz */
+.quiz-container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-title {
+  color: #5c4b99;
+}
+
+/* Marceline */
+
+img.marceline-image {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: 20%;
+}
+
+@media (min-width: 768px) {
+  img.marceline-image {
+    width: 500px;
+    margin-left: 10%;
+  }
+}
+
+.marceline-info-box {
+  background-color: rgba(167, 52, 31, 0.559); 
+  color: #000000; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* BMO */
+
+img.bmo-image {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: 20%;
+}
+
+@media (min-width: 768px) {
+  img.bmo-image {
+    width: 500px;
+    margin-left: 10%;
+  }
+}
+
+.bmo-info-box {
+  background-color: rgba(24, 154, 72, 0.559); 
+  color: #000000; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }

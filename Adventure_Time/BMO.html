@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Lich - Adventure Time</title>
+  <title>BMO - Adventure Time</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" type="image/png" sizes="192x192" href="./images/Icon.png"/> </head>
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/Icon.png" />
+</head>
 
 <body class="d-flex flex-column min-vh-100">
 
@@ -25,14 +26,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto">
           <li class="nav-item"><a class="nav-link active" href="index.html">Main</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://myflixerz.to/tv/adventure-time-39381">Watch Online</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="https://myflixerz.to/tv/adventure-time-39381">Watch Online</a></li>
           <li class="nav-item"><a class="nav-link" href="FindHero.html">Know the Hero</a></li>
           <li class="nav-item"><a class="nav-link" href="Lich.html">The Lich</a></li>
           <li class="nav-item"><a class="nav-link" href="Quizz.html">Quizz</a></li>
         </ul>
         <button id="darkModeToggle" class="btn btn-dark ms-auto d-flex align-items-center gap-2">
-          <img id="modeIcon" src="./images/DarkMode_Off.png" alt="Modo oscuro" />
+          <img id="modeIcon" src="./images/DarkMode_Off.png" alt="Dark Mode" />
           <span id="modeLabel">Dark Mode</span>
         </button>
       </div>
@@ -42,22 +42,32 @@
   <!-- Main Content -->
   <main class="flex-fill">
     <div class="container mt-5">
-      <h2 class="hero-title text-center">The Lich</h2>
+      <h2 class="hero-title text-center">BMO</h2>
       <div class="row">
+        <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-start">
+          <img src="./images/bmo_img.png" alt="BMO" class="img-fluid rounded shadow-sm bmo-image">
+        </div>
         <div class="col-lg-6">
-          <div class="lich-info-box p-4 rounded">
-            <h3>The magician of death</h3>
+          <div class="bmo-info-box p-4 rounded">
+            <h3>The Living Game Console</h3>
             <p>
-              The Lich is the embodiment of pure evil and destruction in the world of Adventure Time.<br><br>
-              As a powerful undead sorcerer, he relentlessly seeks to bring chaos and annihilation to the Land of
-              Ooo.<br><br>
-              His eerie presence and dark magic make him one of Finn and Jake's most formidable foes.<br><br>
-              Despite his terrifying nature, his story is intertwined with the deeper lore and mysteries of the series.
+              In a world filled with warriors, monsters, and magic, one tiny robot stands out—not for strength or sorcery,
+              but for charm, imagination, and boundless heart. That robot is BMO, the lovable, sentient game console,
+              roommate, and best friend of Finn and Jake.
+
+              BMO is more than just an entertainment system. With a childlike wonder and a quirky sense of identity, BMO
+              plays roles ranging from videographer and DJ to chef and detective. Whether navigating digital dreams or
+              tackling emotional challenges, BMO teaches that joy, creativity, and friendship can be just as heroic as a
+              sword.
+
+              Small in size but enormous in personality, BMO blends innocence with insight, often blurring the lines
+              between reality and fantasy—and reminding everyone that sometimes, the best adventures are the ones we
+              imagine ourselves.
+
+              Because being a hero doesn’t always mean fighting; sometimes it means playing, dreaming... and dancing in
+              8-bit.
             </p>
           </div>
-        </div>
-        <div class="col-12 col-md-6 mb-4 mb-md-0 text-center text-md-end">
-          <img src="./images/the-lich.jpg" alt="The Lich" class="rounded shadow-sm img-fluid lich-image" />
         </div>
       </div>
     </div>
@@ -67,18 +77,17 @@
   <footer id="footer" class="text-white py-4 mt-5 position-relative">
     <div class="container text-center">
       <a href="https://github.com/ManuelAnd25" target="_blank" class="github-left">
-        <img class="github-logo" src="./images/github-logo.png" alt="GitHub Usuario 1">
+        <img class="github-logo" src="./images/github-logo.png" alt="GitHub User 1">
       </a>
       <a href="https://github.com/miiigue-rdg" target="_blank" class="github-right">
-        <img class="github-logo" src="./images/github-logo.png" alt="GitHub Usuario 2">
+        <img class="github-logo" src="./images/github-logo.png" alt="GitHub User 2">
       </a>
     </div>
   </footer>
-  
+
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="js/obscureMode.js"></script>
-
 </body>
 
 </html>
